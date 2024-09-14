@@ -1,0 +1,73 @@
+@import url(./root.css);
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+.container {
+    max-width: 1320px;
+    padding-left: 12px;
+    padding-right: 12px;
+    margin-left: auto;
+    margin-right: auto;
+
+}
+
+.frame {
+    background-image: url(../image/png/Frame\ 65\ \(3\).png);
+    background-position: center;
+    border-radius: 24px 24px 24px 24px;
+    text-align: center;
+    background-size: cover;
+}
+.py-20{
+    padding-top:20%;
+    padding-bottom: 20%;
+}
+
+
+
+.frame::after {
+    content: '';
+    position: absolute;
+    left: inset;
+}
+
+.relative {
+    background: rgba(255, 0, 0, 0.75);
+    border-radius: 24px 24px 24px 24px;
+}
+
+.z-1 {
+    z-index: 1px;
+}
+
+.frame-btn {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    line-height: 22.68px;
+    color: rgba(255, 0, 0, 1);
+    border: 1rem solid rgba(255, 255, 255, 1);
+    background: rgba(255, 255, 255, 1);
+    border-radius: 56px;
+    margin-top: 30px;
+    margin-bottom: 50px;
+}
+
+.frame-text {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    line-height: 28.8px;
+    color: rgba(255, 255, 255, 1);
+    text-align: center;
+}
+
+
+
+
+.frame-index {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    line-height: 70.56px;
+    color: rgba(255, 255, 255, 1);
+    margin-top: 30px;
+    font-size: var(--fs-40);
+    text-align: center;
+    padding-top: 50px;
+}
