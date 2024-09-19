@@ -1,5 +1,5 @@
 @import url(./root.css);
-@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=DM+Sans:ital,opsz,wght@0,9..40,100..1000;1,9..40,100..1000&family=Montserrat:ital,wght@0,100..900;1,100..900&family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Work+Sans:ital,wght@0,100..900;1,100..900&family=Yellowtail&display=swap');
 
 .container {
     max-width: 1320px;
@@ -10,64 +10,320 @@
 
 }
 
+.z-1 {
+    z-index: 1;
+}
+
+.row {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    margin-left: -12px;
+    margin-right: -12px;
+}
+
+.w-100 {
+    width: 100%;
+}
+
+.relative {
+    position: relative;
+}
+
+.d-flex {
+    display: flex;
+
+}
+
+.justify-content-center {
+    justify-content: center;
+
+}
+
+.justify-items-center {
+    justify-items: center;
+}
+
+.align-items-center {
+    align-items: center;
+}
+
+.align-content-center {
+    align-content: center;
+}
+
+.min-vh-100 {
+    min-height: 100vh;
+}
+
+.py-50 {
+    padding-top: 50px;
+    padding-bottom: 50px;
+}
+
 .frame {
-    background-image: url(../image/png/Frame\ 65\ \(3\).png);
-    background-position: center;
+    background-image: url(../image/png/Frame.png);
     border-radius: 24px 24px 24px 24px;
     text-align: center;
     background-size: cover;
+    background-repeat: no-repeat;
+    background-position: cover;
+    padding: 50px;
 }
-.py-20{
-    padding-top:20%;
-    padding-bottom: 20%;
-}
-
-
 
 .frame::after {
     content: '';
     position: absolute;
-    left: inset;
-}
-
-.relative {
     background: rgba(255, 0, 0, 0.75);
-    border-radius: 24px 24px 24px 24px;
+    border-radius: 24px;
+    inset: 0px;
+
 }
 
-.z-1 {
-    z-index: 1px;
+
+h2 {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: var(--fs-56);
+    font-weight: 600;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
 }
 
-.frame-btn {
+.frame-para {
     font-family: "Plus Jakarta Sans", sans-serif;
     font-size: 18px;
+    font-weight: 400;
+    line-height: 28.8px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding-top: 40px;
+}
+
+.frame-button {
+    font-family: "Plus Jakarta Sans", sans-serif;
+    font-size: 18px;
+    font-weight: 700;
     line-height: 22.68px;
+    cursor: pointer;
     color: rgba(255, 0, 0, 1);
-    border: 1rem solid rgba(255, 255, 255, 1);
     background: rgba(255, 255, 255, 1);
     border-radius: 56px;
-    margin-top: 30px;
-    margin-bottom: 50px;
+    border: 1px solid rgba(255, 255, 255, 1);
+    padding: 20px 32px 20px 32px;
+    margin-top: 40px;
 }
 
-.frame-text {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    font-size: 18px;
-    line-height: 28.8px;
-    color: rgba(255, 255, 255, 1);
+/*Congratulation popus*/
+.card-popus {
+    border-radius: 10px;
+    align-content: center;
     text-align: center;
+    height: 450px;
+    width: 700px;
+    margin: auto;
 }
 
+.position-relative {
+    position: relative;
+}
 
-
-
-.frame-index {
-    font-family: "Plus Jakarta Sans", sans-serif;
-    line-height: 70.56px;
-    color: rgba(255, 255, 255, 1);
-    margin-top: 30px;
-    font-size: var(--fs-40);
+.small-head {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
     text-align: center;
+    color: rgba(115, 123, 154, 1);
+    font-family: "Poppins", sans-serif;
+    padding-bottom: 20px;
     padding-top: 50px;
 }
+
+.small-head-1 {
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 29px;
+    text-align: center;
+    color: rgba(115, 123, 154, 1);
+    font-family: "Poppins", sans-serif;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+
+.congratulation {
+    font-family: "Yellowtail", sans-serif;
+    font-size: 77.54px;
+    font-weight: 400;
+    text-align: center;
+    padding-top: 10px;
+    color: rgba(37, 41, 48, 1);
+}
+
+.home-btn {
+    border: 1px solid white;
+    border-radius: 2rem;
+    background-color: rgba(77, 115, 248, 1);
+    color: #fff;
+    font-size: 20px;
+    font-family: "Poppins", sans-serif;
+    font-weight: 500;
+    text-align: center;
+    padding: 8px 15px;
+    cursor: pointer;
+}
+
+.right-cross {
+    position: absolute;
+    top: 2%;
+    right: 2%;
+    cursor: pointer;
+}
+
+.vector-right {
+    position: absolute;
+    top: 0%;
+    right: 0%;
+}
+
+.vector-left {
+    position: absolute;
+    left: 0%;
+    top: 0%;
+}
+
+.vector-left-bottom {
+    position: absolute;
+    left: 0%;
+    bottom: 0%;
+}
+
+.vector-right-bottom {
+    position: absolute;
+    right: 0%;
+    bottom: 0%;
+}
+
+.max-w-770 {
+    max-width: 770px;
+}
+
+.w-770 {
+    width: 770px;
+}
+
+/*header-2*/
+.section-1 {
+    padding: 50px;
+
+}
+
+.flex-column {
+    flex-direction: column;
+}
+
+.bg-darkblue {
+    background-color: darkblue;
+}
+
+nav ul li {
+    margin-left: 20px;
+}
+
+.justify-content-between {
+    justify-content: space-between;
+}
+
+.pt-10 {
+    padding-top: 10px;
+}
+
+.flex-grow-1 {
+    flex-grow: 1;
+}
+
+.flex-direction {
+    flex-direction: column;
+}
+
+nav ul li a {
+    font-family: 'DM Sans', sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 28px;
+    color: rgba(255, 255, 255, 1);
+}
+
+.nav-items {
+    font-family: "Poppins", sans-serif;
+    font-size: 24px;
+    line-height: 36px;
+    letter-spacing: -0.2926828861236572px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.last-li {
+    font-family: "DM Sans", sans-serif;
+    font-weight: 500;
+    font-size: 18px;
+    line-height: 26px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    color: #FFFFFF;
+    padding: 7px 18px;
+    background: blue;
+    border-radius: 100px;
+
+}
+
+.p-modify {
+    font-family: "DM Sans", sans-serif;
+    font-size: 22px;
+    font-weight: 500;
+    line-height: 32px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+}
+
+.form-3 {
+    border: 2px solid rgba(255, 255, 255, 1);
+    border-radius: 100px;
+    font-family: "DM Sans", sans-serif;
+    font-size: 20px;
+    font-weight: 500;
+    line-height: 26px;
+    background-color: transparent;
+    padding: 16px 24px;
+    margin-top: 50px;
+
+}
+
+
+.btn-2 {
+    background: rgba(37, 218, 197, 1);
+    font-family: "Poppins", sans-serif;
+    font-size: 20px;
+    font-weight: 600;
+    line-height: 26px;
+    cursor: pointer;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    padding: 16px 33px;
+    border: none;
+    border-radius: 30px;
+    margin-left: 10px;
+    margin-top: 50px;
+}
+
+.paragraph-2 {
+    font-family: "Poppins", sans-serif;
+    font-size: 16px;
+    font-weight: 400;
+    line-height: 22px;
+    letter-spacing: -0.20000000298023224px;
+    text-align: center;
+    color: rgba(255, 255, 255, 1);
+    opacity: 30%;
+    margin-top: 50px;
+}
+

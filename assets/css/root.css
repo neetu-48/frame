@@ -28,7 +28,17 @@
 @media(min-width:992px){
     :root {
         --fs-56: 40px;
+    }
+}
+@media(max-width:500px){
+    :root {
         --fs-40: 30px;
+    }
+}
+@media(min-width:700px){
+    :root {
         --fs-30: 20px;
     }
 }
+        
+       
